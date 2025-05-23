@@ -18,7 +18,7 @@ pipeline {
 
         stage('Run Docker Container') {
             steps {
-                sh 'docker run -d -p 5000:5000 simple-flask-app'
+                bat 'docker run -d -p 5000:5000 simple-flask-app'
             }
         }
     }
